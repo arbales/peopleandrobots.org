@@ -9,7 +9,7 @@ get '/' do
   erb :welcome
 end
 
-get '/projects' do
+get '/admin/projects' do
  erb :projects
 end
 
@@ -21,7 +21,7 @@ get '/sponsors' do
   erb :sponsors
 end
 
-get '/people' do
+get '/admin/people' do
   @people = Person.all
   erb :people
 end
@@ -41,17 +41,6 @@ post '/admin/person/add' do
   end
 end
 
-post '/affiliations/search' do
-  @a = Affiliation.all(:name.like => params[:name])
-  erb :affiliations_search
-end
-
-get '/md' do
-  doc = Maruku.new("# Hello World
-  How are you?")
-  doc.to_html
-end
-
-get '/:route' do 
+not_found do
   erb :notfound
 end
