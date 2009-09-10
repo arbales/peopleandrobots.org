@@ -1,0 +1,44 @@
+<%= erb(:top, :layout => false) %>
+<div id="content_left" class="grid_3">
+	-
+</div>
+
+<div id="content_right" class="grid_3">
+	<form action="" id="add_person" method="post" accept-charset="utf-8">
+		<input type="text" name="full_name" value="Full Name" class="_defaulted">
+		<input type="text" name="email" value="E-Mail Address" class="_defaulted">
+		<input type="text" name="affiliation" value="Affiliation" class="_defaulted">
+		<textarea name="bio"></textarea>
+		<p><input type="submit" value="Add Person"></p>
+	</form>
+</div>
+
+<%= erb(:bottom, :layout => false)%>
+
+<script>
+	function clearDefault(){
+		this.writeAttribute('default', this.value);
+		this.removeClassName('_defaulted');
+		this.value = '';
+	}
+	function restoreDefault(){
+		if (this.value == ''){
+			this.value = this.readAttribute('default');
+			this.addClassName('_defaulted');
+		}
+	}
+	$$('input[type=text]').each(function(s){
+		s.observe('focus', clearDefault);
+		s.observe('blur', restoreDefault);
+	});
+	
+	$('add_person').observe('submit', function(event){
+		Event.stop(event);
+		this.request({
+			onSuccess: function(){
+				this.reset();
+			},
+		});
+	});
+	
+</script>
