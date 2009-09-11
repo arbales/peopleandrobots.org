@@ -24,6 +24,11 @@ function runAccordians(){
 				if (!next) {
 					s.up('li').morph('padding-bottom:12px');
 				}
+
+				/*if (s.next('ul').down().siblings().size() == 1){
+					alert('Zero');
+					s.next('ul').down('.list-selector').next('ul').blindDown();
+				}*/
 				
 				if (!e.down('ul')){
 					e.addClassName('_last_dimension');
@@ -50,6 +55,9 @@ function runAccordians(){
 							},
 					});
 				}
+			} else {
+				s.next('ul').blindUp();
+				s.removeClassName('_open');
 			}
 		});
 	});
