@@ -2,11 +2,36 @@
 
 		<div id="content_left" class="grid_6">
 			<p class="opening">
-				The People and Robots Project is a group of researchers who are studying how people interact with robots. Robots that work with and for people must be designed not just to adapt to the physical world (the primary emphasis in traditional robotics) but also within the social world. Toward this end, our work has a distinct interdisciplinary character in its blend of the disciplines of design, social psychology, and robotics.</p>
-			<p class="grid_5 alpha mini">We join other research pioneers in the new field of human robot interaction [link to HRI.org website]. For an earlier overview of HRI, see our introduction to the 2004 HCI Journal Special Issue on Human Robot Interaction [link to the PDF 64K].</p>
+				Our work is divided into several areas, all of which are actively growing.</p>
 		</div>
+		
+		<div class="clear"></div>
+		
+		<div class="grid_9">
+			<ul class="multidimensional">
+				<li><h3 class="list-selector _open">How robots can help people appropriately, and the consequences of this help</h3>
+					<ul class="multidimensional">
+						<li><p class="list-selector">How can a robot walk naturally with a person? This subject is the topic of Rachel Gockley’s dissertation research. Rachel’s dissertation work is developing a robot called Companion, armed with algorithms that sense and navigate the physical and social setting.</p>
+							<ul>
+								<li>Kirby, R., Simmons, R., and Forlizzi, J. Variable Sized Grid Cells for Rapid Replanning in Dynamic Environments. Accepted to IROS09.</li>
+								<li>Kirby, R., Simmons, R., and Forlizzi, J. COMPANION: A Constraint-Optimizing Method for Person-Acceptible Navigation. Accepted to RO-MAN09.</li>
+								<li>Gockley, Rachel, Forlizzi, Jodi and Simmons, Reid (2007): Natural person-following behavior for social robots. In: Proceedings of the ACM/IEEE International Conference on Human-Robot Interaction 2007. pp. 17-24.</li>
+								<li>Gockley, R., Bruce, A., Forlizzi, J., Michalowski, M., Mundell, A., Rosenthal, S., Seller, B., Simmons, R., Snipes, K., Schultz, A., and Wang, J. (2005). Designing Robots for Long-Term Social Interaction. Proceedings of ICRA05. New York, NY: John Wiley and Sons, 2199-2204.</li>
+							</ul>
+						</li>
+						<li><p class="list-selector">Receiving help from a robot was Cristen Torrey’s dissertation topic. When face to face, a help giver has contextual information that can be used to tailor communication. Current research on robotic helpers seeks to leverage these benefits of physically embodied interaction without acknowledging that receiving help is not always a positive experience. Help recipients may feel scrutinized, or they may feel the helper has taken control of their activity. Cristen’s dissertation research examines both positive and negative byproducts of receiving help, testing whether help from a robot is perceived as evaluative or controlling. [ask Cristen for a dissertation paper to post. Also here are two other papers to list]
+						</p>
+							<ul>
+								<li>Torrey, C. 2008. Social and psychological reactions to receiving help from a robot. In CHI '08 Extended Abstracts on Human Factors in Computing Systems. CHI '08. ACM, New York, NY, 2653-2656. </li>
+								<li>Torrey, C., Fussell, S.R., and Kiesler, S. 2008. Trying to Help: Social Challenges for Smart Robots. In Proceedings of the Workshop on Robotic Helpers: User Interaction, Interfaces and Companions in Assistive and Therapy Robotics at HRI '08.</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			</div>
 
-		<div id="content_right" class="grid_4">
+		<div id="content_right" class="grid_3">
 			<h3 class="list_header"><img src="images/goals_header.png" alt="Goals"></h3>
 			<ul class="list">
 				<li>Understand how people and robots will interact with one another in the context of the social world.</li>
@@ -14,14 +39,9 @@
 				<li>Advance dialogue on the appropriate and useful deployment of robots in work and home settings.</li>
 			</ul>
 		</div>
-		
-		<div id="content_right" class="grid_2">
-			<h3 class="list_header"><img src="images/links_header.png" alt="Links"></h3>
-			<ul class="list mini">
-				<li>Understand how people and robots will interact with one another in the context of the social world.</li>
-				<li>Aid robotic technology development towards effective human-robot interaction.</li>
-				<li>Advance dialogue on the appropriate and useful deployment of robots in work and home settings.</li>
-			</ul>
-		</div>
+
 
 <%= erb(:bottom, :layout => false)%>
+<script>
+	runAccordians();
+</script>

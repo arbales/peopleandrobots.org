@@ -9,7 +9,7 @@ get '/' do
   erb :welcome
 end
 
-get '/admin/projects' do
+get '/projects' do
  erb :projects
 end
 

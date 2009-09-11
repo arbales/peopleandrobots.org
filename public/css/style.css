@@ -1,6 +1,5 @@
 html {
-	background-color:#fff;
-	background:url('/images/bg.2.png') top -80px repeat-x;
+	background:url('/images/bg.2.png') 0px -80px repeat-x #fff;
 	font-family:'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', Verdana, sans-serif;
 	overflow-y:scroll;
 }
@@ -10,6 +9,7 @@ h1 {
 }
 
 h2 {
+	font-size:1.75em;
 	margin-bottom:.75em;
 }
 
@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight:bold;
 }
 
-h3 {font-size:1.15em;letter-spacing:-1px;}
+h3 {font-size:1.45em;}
 h3.list_header {margin-left:20px;}
 
 .person h4 {font-size:.75em;}
@@ -169,4 +169,66 @@ input[type=text] {
 	width:100%;
 
 	margin-bottom:8px;
+}
+
+p.list-selector {
+	font-size:1.5em;
+}
+
+.list-selector {
+	background:url('/images/disclosure_closed.png') 10px 6px no-repeat;
+	padding-left:26px!important;
+	background-color:inherit;
+	cursor:pointer;
+	margin-right:4px;
+	margin-top:4px;
+	padding-bottom:10px;
+	-webkit-transition:color .5s linear;
+}
+
+.list-selector:hover {
+	color:#BD0005;
+}
+
+.list-selector._open {
+	cursor:default;
+	background:url('/images/disclosure_open.png') 10px 6px no-repeat;
+	padding-left:26px!important;
+	background-color:inherit;
+}
+
+._open ul {
+	border-bottom:1px solid #000;
+}
+
+.list-selector._open:hover {
+	color:inherit;
+}
+
+.multidimensional li {
+	padding-top:4px;
+	border-top :1px solid #ddd;
+}
+
+.multidimensional li .list-selector {
+}
+
+.multidimensional li ul li .list-selector {
+	color:inherit;
+	background-color:inherit;
+}
+
+._last_dimension li {
+	border-top:none;
+	font-size:12px;
+}
+
+._last_dimension {
+	margin-bottom:18px;
+}
+
+.multidimensional li ul {
+	margin-top:10px;
+	margin-left:26px;
+	background-color:#eee;
 }
