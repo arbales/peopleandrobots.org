@@ -22,6 +22,7 @@ h2 {
 h1,h2,h3,h4,h5,h6 {
 	font-family:'Helvetica Neue', Helvetica, Arial;
 	font-weight:bold;
+	color:#262626;
 }
 
 h3 {font-size:1.25em; text-transform:uppercase; letter-spacing:1px;}
