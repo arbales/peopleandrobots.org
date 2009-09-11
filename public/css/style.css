@@ -183,6 +183,7 @@ p.list-selector {
 	margin-right:4px;
 	margin-top:4px;
 	padding-bottom:10px;
+	font-family:'Helvetica Neue', Helvetica, Arial;
 	-webkit-transition:color .5s linear;
 }
 
