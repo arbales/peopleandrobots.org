@@ -112,7 +112,7 @@ a.current {
 	height:300px;
 	width:100%;
 	left:0px;
-	top:313px;
+	top:272px;
 	margin-top:-1.25em;
 	background:url('/images/fade.png') repeat-x;
 	z-index:-1;
@@ -251,5 +251,14 @@ p.list-selector {
 .multidimensional li ul {
 	margin-top:10px;
 	margin-left:26px;
+}
+
+.porch {
+}
+.porch ul li {
+	padding:1em 0px 1em 0px;
 	background-color:#eee;
+	float:left;
+	width:20px;
+	height:45px;
 }

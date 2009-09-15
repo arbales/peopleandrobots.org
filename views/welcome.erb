@@ -1,5 +1,35 @@
 <%= erb(:top, :layout => false) %>
 
+		<div id="porch" class="porch grid_12">
+			<ul>
+				<li style="background-color:#8D0000"></li>
+				<li style="background-color:#66891B"></li>
+				<li style="background-color:#1D3689"></li>
+				
+				</ul>
+		</div>
+		<script>
+			
+		items = $('porch').down('ul').childElements('li');
+		
+			function selectPane(){
+				others = items.without(this);
+			 	current = this;
+				width = 25 / (items.length - 1);
+				effects = []
+				effects.push(new Effect.Morph(current, {style:'width:75%', sync: true}));
+				others.each(function(s){
+					effects.push(new Effect.Morph(s, {style:'width:'+width+'%;', sync: true}));
+				});
+				new Effect.Parallel(effects, {duration: .5});
+				
+			}
+			
+			items.each(function(s){
+				s.morph('width:' + (1/items.length * 100) + '%;', {duration: .5});
+				s.observe('mouseover', selectPane);
+			});
+		</script>
 		
 		<div id="content_left" class="grid_6">
 			<p class="opening">
