@@ -2,7 +2,7 @@
 
 		<div id="porch" class="porch grid_12">
 			<ul>
-				<li style="background-color:#8D0000"></li>
+				<li style="background:url('/images/space.jpg') left center no-repeat #8D0000;"></li>
 				<li style="background-color:#66891B"></li>
 				<li style="background-color:#1D3689"></li>
 				
@@ -16,6 +16,24 @@
 				items.each(function(s){
 					s.stopObserving('mouseover');
 				});
+			}
+			
+			function restoreHeight(){
+				effects = []
+				items.each(function(s){
+					effects.push(new Effect.Morph(s, {style:'height:60px;', sync: true}));
+					});
+				new Effect.Parallel(effects, {duration: .5});
+				this.stopObserving('mouseout');
+			}
+			
+			function sunroom(){
+				effects = []
+				items.each(function(s){
+					effects.push(new Effect.Morph(s, {style:'height:250px;', sync: true}));
+					});
+				new Effect.Parallel(effects, {duration: .5});
+				this.observe('mouseout', restoreHeight);
 			}
 			
 			function watchPanels(){
@@ -43,6 +61,8 @@
 				s.morph('width:' + (1/items.length * 100) + '%;', {duration: .5});
 				s.observe('mouseover', selectPane);
 			});
+			$('porch').observe('click', sunroom)
+			
 		</script>
 		
 		<div id="content_left" class="grid_6">
