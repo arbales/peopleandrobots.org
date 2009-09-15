@@ -12,6 +12,7 @@ strong {
 
 h1 {
 	margin-top:30px;
+	margin-bottom:30px;
 }
 
 h2 {
@@ -112,7 +113,7 @@ a.current {
 	height:300px;
 	width:100%;
 	left:0px;
-	top:272px;
+	top:226px;
 	margin-top:-1.25em;
 	background:url('/images/fade.png') repeat-x;
 	z-index:-1;
@@ -254,6 +255,7 @@ p.list-selector {
 }
 
 .porch {
+	margin-bottom:20px;
 }
 .porch ul li {
 	padding:1em 0px 1em 0px;
