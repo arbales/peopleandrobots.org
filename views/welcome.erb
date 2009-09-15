@@ -12,6 +12,18 @@
 			
 		items = $('porch').down('ul').childElements('li');
 		
+			function preventPanelCollisions(){
+				items.each(function(s){
+					s.stopObserving('mouseover');
+				});
+			}
+			
+			function watchPanels(){
+				items.each(function(s){
+					s.observe('mouseover', selectPane);
+				});
+			}
+		
 			function selectPane(){
 				others = items.without(this);
 			 	current = this;
@@ -20,8 +32,10 @@
 				effects.push(new Effect.Morph(current, {style:'width:75%', sync: true}));
 				others.each(function(s){
 					effects.push(new Effect.Morph(s, {style:'width:'+width+'%;', sync: true}));
-				});
-				new Effect.Parallel(effects, {duration: .5});
+					});
+				new Effect.Parallel(effects, {duration: .5,
+					beforeStart: preventPanelCollisions,
+					afterFinish: watchPanels});
 				
 			}
 			
