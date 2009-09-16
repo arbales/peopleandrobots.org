@@ -3,7 +3,7 @@
 		<div id="porch" class="porch grid_12">
 			<ul>
 				<li style="background:url('/images/space.jpg') left center no-repeat #8D0000;"></li>
-				<li style="background-color:#66891B"></li>
+				<li style="background:url('/images/snackbot_2.png') left top no-repeat #66891B"></li>
 				<li style="background-color:#1D3689"></li>
 				
 				</ul>
@@ -30,7 +30,7 @@
 			function sunroom(){
 				effects = []
 				items.each(function(s){
-					effects.push(new Effect.Morph(s, {style:'height:250px;', sync: true}));
+					effects.push(new Effect.Morph(s, {style:'height:275px;', sync: true}));
 					});
 				new Effect.Parallel(effects, {duration: .5});
 				this.observe('mouseout', restoreHeight);
