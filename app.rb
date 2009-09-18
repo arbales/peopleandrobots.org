@@ -13,6 +13,10 @@ get '/projects' do
  erb :projects
 end
 
+get '/people' do
+  erb :static_people
+end
+
 get '/admin/person/add' do
   erb :person_add
 end

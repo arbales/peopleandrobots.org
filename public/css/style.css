@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6 {
 	color:#262626;
 }
 
-h3 {font-size:1.25em; text-transform:uppercase; letter-spacing:1px;}
+h3 {font-size:1.15em;margin-bottom:1.25em;}
 h3.list_header {margin-left:20px;}
 
 .person h4 {font-size:.75em;}
@@ -255,6 +255,7 @@ p.list-selector {
 }
 
 .porch {
+	display:none!important;
 	margin-bottom:20px;
 }
 .porch ul li {
@@ -263,4 +264,15 @@ p.list-selector {
 	float:left;
 	width:20px;
 	height:60px;
+}
+
+span.name {
+	font-weight:bold;
+	display:block;
+}
+
+span.email {
+	font-size:11px;
+	color:#878787;
+	display:block;
 }
