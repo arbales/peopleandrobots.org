@@ -8,7 +8,7 @@ strong {
 	font-weight:bold;
 }
 
-.block {display:block;margin-bottom:.25em;}
+/*.block {display:block;margin-bottom:.25em;} */
 
 h1 {
 	margin-top:30px;
@@ -93,7 +93,6 @@ a.current {
 #nav ul li a {
 	float:left;
 	text-decoration:none;
-	font-family:'Georgia';
 	text-transform:uppercase;
 	letter-spacing:2px;
 	text-align:center;
@@ -184,29 +183,40 @@ p.list-selector {
 }
 
 .list-selector {
-	background:url('/images/disclosure_closed.png') 10px 6px no-repeat;
 	background-color:rgba(255,255,255,.5);
 	padding-left:26px!important;
 	background-color:inherit;
 	cursor:pointer;
 	margin-right:4px;
-	margin-top:4px;
+	margin-top:4px;    
+	line-height:1.5em;
 	padding-bottom:10px;
-	border-bottom:1px solid #ddd;
-	-webkit-transition:color .5s linear;
+	-webkit-transition:color .2s linear;
+}    
+
+.list-selector {
+  font-family:'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+p.list-selector strong {  
+  color:#8D0004;
+  border-bottom:1px solid #8D0004;
 }
 
-.list-selector:hover {
-	color:#BD0005;
+.list-selector:hover strong {
+	color:#701319;
+	border-color:#701319;
 }
 
 .list-selector._open {
 	cursor:default;
-	background:url('/images/disclosure_open.png') 10px 6px no-repeat;
 	padding-left:26px!important;
 	background-color:inherit;
 	border-bottom:none;
 	
+}  
+
+.projects {
+  font-size:11px;
 }
 
 ._open ul {
@@ -219,15 +229,12 @@ p.list-selector {
 
 .multidimensional li {
 	padding-top:4px;
-	border-top :1px solid #ddd;
 }
 
 .multidimensional li ul li .list-selector {
-	background:url('/images/disclosure_closed.png') 10px 4px no-repeat;
 }
 
 .multidimensional li ul li .list-selector._open {
-	background:url('/images/disclosure_open.png') 10px 4px no-repeat;
 }
 
 
