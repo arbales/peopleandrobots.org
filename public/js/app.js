@@ -8,7 +8,10 @@ function submitDForm(e){
 
 
 function runAccordians(){
-	$('footer_block').fade();
+	if ($('footer_block')){
+	  $('footer_block').fade();
+  }
+  
 	$$('ul.multidimensional .list-selector:not(._open)').each(function(s){
 		new Effect.BlindUp(s.next('ul'), {duration:.2});
 	});
@@ -37,6 +40,7 @@ function runAccordians(){
 						], {
 							duration: .5,
 							afterFinish: function(){
+  						  e.setStyle("height:auto");
 								old.removeClassName('_open');
 								s.addClassName('_open'); 
 							},
@@ -44,9 +48,10 @@ function runAccordians(){
 				} else {
 					new Effect.Parallel([
 						new Effect.BlindDown(e, {sync:true}),
-						], {
+						], {      
 							duration: .5,
 							afterFinish: function(){
+  						  e.setStyle("height:auto");
 								s.addClassName('_open'); 
 							},
 					});
@@ -60,6 +65,7 @@ function runAccordians(){
 }
 
 document.observe("dom:loaded",function(){
+  runAccordians();
 	$$('form.dynamic').each(function(s){
 		s.observe('submit', submitDForm, false);
 	});

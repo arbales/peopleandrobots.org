@@ -10,7 +10,7 @@ get '/' do
 end
 
 get '/projects' do
- erb :projects
+ haml :projects
 end
 
 get '/people' do

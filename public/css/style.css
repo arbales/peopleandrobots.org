@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6 {
 	color:#262626;
 }
 
-h3 {font-size:1em;margin-bottom:1.25em;}
+h3 {font-size:15px;margin-bottom:1.25em;}
 h3.list_header {margin-left:20px;}
 
 .person h4 {font-size:.75em;}
@@ -58,6 +58,10 @@ p.mini {
 ul li {
 	font-size:.75em;
 	margin-bottom:.85em;
+}
+
+ul li ul li {
+  font-size:10px;
 }
 
 ul.inline li {display:inline;}
