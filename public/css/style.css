@@ -21,12 +21,12 @@ h2 {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family:'Helvetica Neue', Helvetica, Arial;
+/*	font-family:'Helvetica Neue', Helvetica, Arial;*/
 	font-weight:bold;
 	color:#262626;
 }
 
-h3 {font-size:1.15em;margin-bottom:1.25em;}
+h3 {font-size:1em;margin-bottom:1.25em;}
 h3.list_header {margin-left:20px;}
 
 .person h4 {font-size:.75em;}
@@ -39,8 +39,13 @@ p {
 }
 
 p.opening {
-	font-size:1.25em;
+	font-size:1.5em;
 	line-height:1.35em;
+} 
+
+p.statement {
+  font-size:1.15em;
+  line-height:1.35em;
 }
 
 p.mini {
@@ -99,7 +104,7 @@ a.current {
 	margin-right:20px;
 	font-size:13px;
 	color:#666;
-	padding:8px 0px 20px 0px;
+	padding:8px 0px 2px 0px;
 	-webkit-transition:color .5s linear;
 }
 
@@ -109,15 +114,12 @@ a.current {
 
 #fade {
 	position:absolute;
-	height:300px;
+	height:3px;
 	width:100%;
 	left:0px;
-	top:226px;
-	margin-top:-1.25em;
-	background:url('/images/fade.png') repeat-x;
+	background:url('/images/fade.png');
 	z-index:-1;
 }
-
 #cmu {
 	position:absolute;
 	top:0px;
@@ -282,4 +284,8 @@ span.email {
 	font-size:11px;
 	color:#878787;
 	display:block;
+} 
+
+.vspace {
+  height:32px;
 }
