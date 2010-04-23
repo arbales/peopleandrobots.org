@@ -1,0 +1,12 @@
+= erb(:top, :layout => false)
+#content_left.grid_6
+  - @people.each{|p|
+  .person
+    %h3
+      = p.full_name
+    %h4
+      = p.affiliation
+    %p
+      = p.bio
+  - }
+= erb(:bottom, :layout => false)

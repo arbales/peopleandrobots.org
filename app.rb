@@ -1,12 +1,13 @@
 require 'rubygems'
 require 'sinatra'
 require 'json'
-require 'maruku'
+require 'maruku'   
+require 'haml'
 
-load 'models.rb'
+# load 'models.rb'
 
 get '/' do
-  erb :welcome
+  haml :welcome
 end
 
 get '/projects' do
@@ -14,7 +15,7 @@ get '/projects' do
 end
 
 get '/people' do
-  erb :static_people
+  haml :static_people
 end
 
 get '/admin/person/add' do

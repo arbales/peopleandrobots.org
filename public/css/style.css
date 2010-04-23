@@ -204,8 +204,9 @@ p.list-selector {
   font-family:'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 p.list-selector strong {  
-  color:#8D0004;
-  border-bottom:1px solid #8D0004;
+  color:#8D0004;    
+  display:block;
+  border-bottom:none;
 }
 
 .list-selector:hover strong {
@@ -243,8 +244,6 @@ p.list-selector strong {
 .multidimensional li ul li .list-selector._open {
 }
 
-
-
 .multidimensional li ul li .list-selector {
 	font-family:'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', Verdana, sans-serif;
 	font-size:12px;
@@ -267,8 +266,8 @@ p.list-selector strong {
 	margin-left:26px;
 }
 
-.porch {
-	display:none!important;
+.porch {       
+  margin-top:-20px;
 	margin-bottom:20px;
 }
 .porch ul li {
@@ -276,7 +275,7 @@ p.list-selector strong {
 	background-color:#eee;
 	float:left;
 	width:20px;
-	height:60px;
+	height:275px;
 }
 
 span.name {
