@@ -23,7 +23,7 @@ get '/admin/person/add' do
 end
 
 get '/sponsors' do
-  erb :sponsors
+  haml :sponsors
 end
 
 get '/admin/people' do

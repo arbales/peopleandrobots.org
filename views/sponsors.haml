@@ -1,13 +1,19 @@
-= erb(:top, :layout => false)
-#content_left.grid_4
-  %p.opening
-    %img{ :src => "http://snackbot.417east.com/images/sponsors.gif", :alt => "Sponsors" }
-#content_right.grid_6
+.grid_6
   %p.opening
     Our sponsors provide essential resources such as funds,
-    equipment, and discussion. Without their generous consideration,
+    equipment, and discussion.
+.clear.vspace_2
+  
+#content_left.grid_4
+
+  %p.opening
+    %img{ :src => "/images/sponsors.png", :alt => "Sponsors" }
+    
+#content_right.grid_4
+  %p
+    Without their generous consideration,
     these projects would not be possible. Support for our work comes from:
-  %ul.grid_5
+  %ul
     %li
       %a{ :href => "http://nsf.gov" }
         The National Science Foundation
@@ -18,11 +24,10 @@
     %li
       %a{ :href => "http://www.hillmanfdn.org/" }
         Hillman Foundation
-  .clear
+  .clear.vspace
   %p
     To discuss becoming a partner or sponsor of our work, send an e-mail
     to
     %em
       kiesler [at] cs [dot] cmu [dot] edu
     explaining your interest and goals for the project.
-= erb(:bottom, :layout => false)

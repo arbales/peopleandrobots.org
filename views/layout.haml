@@ -4,23 +4,20 @@
     %title
       Project on People &amp; Robots &bull; Projects
     %link{ :href => "http://yui.yahooapis.com/2.7.0/build/reset/reset-min.css", :rel => "stylesheet" }
-    %link{ :href => "http://camero.417east.com/prisma/css/960.c.css", :rel => "stylesheet" }
+    %link{ :href => "/css/grid.css", :rel => "stylesheet" }
     %link{ :href => "/css/style.css", :rel => "stylesheet" }
     %script{ :src => "http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js", :type => "text/javascript", :charset => "utf-8" }
     %script{ :src => "http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.2/scriptaculous.js", :type => "text/javascript", :charset => "utf-8" }
     %script{ :src => "/js/app.js" }
   %body
-    #cmu
-      %a{ :href => "/" }
-        %img{ :src => "/images/ppr.png", :alt => "PPR" }
-    .container_12
-      .grid_12
+    .container_8
+      .grid_8
         %h1
           %a{ :href => "/" }
-            %img{ :src => "/images/ppr_new_logo.png", :alt => "Project on People and Robots" }
+            %img{ :src => "/images/ppr3.png", :alt => "Project on People and Robots" }
       .clear
       #fade
-      #nav.grid_12
+      #nav.grid_8
         %ul.inline
           %li
             %a{ :href => "/people" }
@@ -34,15 +31,16 @@
         %span.clear
       .clear
       #fade
-      .clear.vspace
+      .clear.vspace_2
       
       =yield
       
-      .clear
-      #footer_block.grid_12
+      .clear.vspace
+      #footer_block.grid_8
         %p
           Copyright &copy; 2010,
           %a{ :href => "http://cmu.edu" }
             Carnegie Mellon University
+      .clear
       
       
