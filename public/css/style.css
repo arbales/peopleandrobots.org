@@ -97,7 +97,11 @@ ul.list.mini li {
 
 a {
 	color:#0080FF;
-}
+}                
+.multidimensional li a {
+  text-decoration:none;
+} 
+
 a.current {
 	background:url('/images/tip.png') 50% bottom no-repeat;
 }

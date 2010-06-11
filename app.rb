@@ -6,6 +6,16 @@ require 'haml'
 
 # load 'models.rb'
 
+helpers do
+  def paper_link(caption, name)
+    if (name != nil)
+    "<a href='http://hcii.s3.amazonaws.com/ppr/papers/#{name}.pdf'>#{caption}</a>"
+    else
+      caption
+    end
+  end
+end
+
 get '/' do
   haml :welcome
 end
