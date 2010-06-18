@@ -33,5 +33,5 @@ get '/sponsors' do
 end
 
 not_found do
-  erb :notfound
+  haml :notfound
 end
