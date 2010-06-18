@@ -4,7 +4,6 @@ require 'dm-timestamps'
 require 'dm-aggregates'
 
 DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3:///#{Dir.pwd}/ppr.db")
-##DataMapper.setup(:search, :adapter)
 
 class Person
   include DataMapper::Resource
