@@ -150,10 +150,9 @@ a.current {
 }
 
 #footer_block p {
-  display:none;
-	font-size:11px;
+	font-size:10px;
 	font-family:'Lucida Grande', 'Lucida Sans', 'Lucida Sans Unicode', Verdana, sans-serif;
-	color:#666;
+	color:#999;
 }
 #footer_block a {
 	color:#333;
