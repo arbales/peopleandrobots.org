@@ -1,10 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'json'
-require 'maruku'   
 require 'haml'
-
-# load 'models.rb'
 
 helpers do
   def paper_link(caption, name)
